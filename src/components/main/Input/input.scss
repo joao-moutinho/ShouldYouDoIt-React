@@ -1,0 +1,23 @@
+$nav-color: #41234A;
+
+.input{
+
+   
+    input{
+        box-sizing: border-box;
+        appearance: none;
+        border: none;
+        outline: none;
+        background-color: $nav-color;
+        height: 40px;
+        width: 500px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: blanchedalmond;
+
+          &:focus{
+              border: 1px solid blanchedalmond;
+          }
+    }
+}

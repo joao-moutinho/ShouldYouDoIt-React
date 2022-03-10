@@ -1,0 +1,15 @@
+$nav-color: #41234A;
+$background-color: #713C7F;
+$text-section-color: #BB8FB8;
+$text-nav: #E0C9DA;
+.header{
+    margin: 0;
+    padding: 0;
+    background-color:$nav-color ;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    font-family: Lato, sans-serif;
+}

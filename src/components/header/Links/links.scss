@@ -1,0 +1,46 @@
+$text-nav: #E0C9DA;
+$nav-color: #41234A;
+
+.links {
+
+  
+  
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  align-items: center;
+  font-weight: 100;
+  font-size: 16px;
+  cursor: pointer;
+  
+
+  .link{
+    color: $text-nav;
+    box-sizing: border-box;
+    height: 30px;
+    margin-right: 10px; 
+    padding: 5px 0 3px 0;
+    text-decoration: none;
+    background-color: $nav-color;
+
+    &:hover{    
+      padding: 3px 0 3px 0;
+      border-top: black solid 2px;
+     }
+}
+
+  .inpage{
+     border-bottom: 2px solid black;
+  }
+
+  .outpage{
+    
+     &:hover{
+      border-bottom: 2px solid black;
+      border-top: 2px solid black;
+     }
+  }
+}
+
+
