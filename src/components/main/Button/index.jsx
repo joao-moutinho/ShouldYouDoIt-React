@@ -1,11 +1,18 @@
 import './style.scss';
 
 
-const Button = ({disabled}) => {
+const Button = ({disabled, check}) => {
 
-return(
-   <button disabled={disabled}>Decide</button>
-);
+   if(disabled){
+      console.log("disabled")
+      return(
+         <button className="button disabled" onClick={check}>Decide</button>
+      )}else{
+         return(
+            <button className="button" onClick={check}>Decide</button>
+         );
+      }
 
 }
+
 export default Button;

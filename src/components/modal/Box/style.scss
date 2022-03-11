@@ -1,0 +1,35 @@
+$text-section-color: #BB8FB8;
+
+.box{
+    
+   background-color: $text-section-color ;
+   padding: 20px;
+   border-radius: 6px;
+   width: 300px;
+   animation: slide 2s;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   @keyframes slide{
+       from{
+           transform: translateY(90px);
+       }
+       to{
+            transform: translateY(0px);
+       }
+   }
+
+   .title{
+       margin: 0;
+       font-size: 20px;
+       color: blanchedalmond;
+       padding-bottom: 10px;
+   }
+
+   .text{
+       margin: 0;
+       padding-bottom: 20px;
+
+   }
+}

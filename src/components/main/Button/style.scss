@@ -1,6 +1,6 @@
 $text-section-color: #BB8FB8;
 
-button{
+.button{
 
     
         border: none;
@@ -17,8 +17,10 @@ button{
             transform: scale(0.9);
         }  
 
-        &:disabled{
-            background-color: #888 !important;
-            cursor: not-allowed;
-        }
+       
 }
+.disabled{
+    background-color: #888 !important;
+    cursor: pointer;
+}
+

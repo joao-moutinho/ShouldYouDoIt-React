@@ -1,0 +1,13 @@
+$nav-color: #41234A;
+$text-section-color: #BB8FB8;
+
+.button-modal{
+   appearance: none;
+   width: 100px;
+   height: 40px;
+   border-radius: 8px;
+   background-color: $nav-color ;
+   border: 1px solid black;
+   color: $text-section-color;
+   cursor: pointer;
+}
