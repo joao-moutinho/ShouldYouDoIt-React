@@ -1,6 +1,6 @@
 import './style.scss';
-import Main from '../../components/main/Main'
-import Header from '../../components/header/Header'
+import Main from '../../components/home/main/Main'
+import Header from '../../components/home/header/Header'
 
 function Home() {
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/header/Header";
+import Header from "../../components/home/header/Header";
 import { useState } from "react";
 
 const Gallery = () => {
@@ -7,10 +7,7 @@ const Gallery = () => {
 const [value,setValue] = useState();
 
 
-    const loadgif = (text) =>{
-        setValue(text);
-        console.log(value);
-      }
+
 
 
     return(

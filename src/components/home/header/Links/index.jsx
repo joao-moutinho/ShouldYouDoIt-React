@@ -9,7 +9,7 @@ const Links = () => {
     <div className="links">
 
 {/* in page*/ }
-      {location.pathname === "/" && (
+      {(location.pathname === "/" || location.pathname === "/ShowGif")  && (
        <>  
          <Link to="/" className="link inpage">
             HOME
@@ -22,7 +22,7 @@ const Links = () => {
       )}
 
  {/* out page*/ }
-      {location.pathname !== "/" && (
+      {location.pathname === "/Gallery" && (
         <> 
          <Link to="/" className="link outpage" >
             HOME
