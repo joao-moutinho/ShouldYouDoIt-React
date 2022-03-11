@@ -25,6 +25,7 @@ const Main = () =>{
    console.log("button disabled");
  }
 
+
  //turn on button
  const buttonOn = () =>{
      setButtonState("false");
@@ -36,11 +37,12 @@ const Main = () =>{
 
     return(
         <div className="main">
+
             <Title/>
             <Input handleChange={loadgif} />
             {value.length === 0 && <Button check={buttonOff} disabled={!buttonDisabled}/> }
             {value.length >= 1 && <Button check={buttonOn}/>}
-            {buttonState === "true" && <Modal/>}
+            {buttonState === "true" && <Modal check={buttonOn}/>}
 
         </div>
 

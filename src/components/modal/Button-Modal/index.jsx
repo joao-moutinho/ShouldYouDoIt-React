@@ -1,9 +1,9 @@
 import './style.scss';
 
-const Button = () =>{
+const Button = ({check}) =>{
 
     return(
-        <button className="button-modal">Okay</button>
+        <button className="button-modal" onClick={check}>Okay</button>
     );
 }
 

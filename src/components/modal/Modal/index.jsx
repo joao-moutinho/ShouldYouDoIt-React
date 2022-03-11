@@ -1,10 +1,10 @@
 import Box from '../Box';
 import './style.scss';
-const Modal = () => {
+const Modal = ({check}) => {
 
     return(
        <div className="modal">
-          <Box/>
+          <Box check={check}/>
        </div>
   );
 }
