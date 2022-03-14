@@ -9,9 +9,9 @@ function RoutesApp(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" exact element={<Home/>}/>
+                <Route path="/" element={<Home/>}/>
                 <Route path="/Gallery" element={<Gallery/>}/>
-                <Route path="/ShowGif" element={<Home_Gif/>}/>
+                <Route path="/ShowGif/:text" element={<Home_Gif/>}/>
             </Routes>
         </BrowserRouter>
     );

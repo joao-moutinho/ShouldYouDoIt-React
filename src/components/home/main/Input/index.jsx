@@ -1,13 +1,13 @@
 import React from "react";
 import './input.scss';
 
-const Input = ({handleChange}) =>{
+const Input = ({handleChange, value}) =>{
 
-
+    
 
     return(
         <div className="input">
-           <input type="text" onChange={(e) =>{
+           <input defaultValue={value} type="text" onChange={(e) =>{
                return handleChange(e.target.value)
            }}
             className="input-box"/>

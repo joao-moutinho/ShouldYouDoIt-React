@@ -4,12 +4,8 @@ import { useState } from "react";
 
 const Gallery = () => {
 
-const [value,setValue] = useState();
 
-
-
-
-
+  
     return(
        <div className="App"> 
         <Header/>

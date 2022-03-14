@@ -9,7 +9,7 @@ const Links = () => {
     <div className="links">
 
 {/* in page*/ }
-      {(location.pathname === "/" || location.pathname === "/ShowGif")  && (
+      {(location.pathname === "/" || location.pathname.includes("/ShowGif") )  && (
        <>  
          <Link to="/" className="link inpage">
             HOME

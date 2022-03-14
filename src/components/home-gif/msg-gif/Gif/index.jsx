@@ -1,20 +1,10 @@
-import { loadgif } from "../../../utils/Load/loadgifs";
-
-const Gif = () => {
+import React from "react";
 
 
-
-
-
-const receveGif = async () =>{
-const gif = await loadgif("ola");
-console.log("ola"+gif);
-
-
-}
- 
+const Gif = ({text}) => {
 
  
+
 
     return(
  

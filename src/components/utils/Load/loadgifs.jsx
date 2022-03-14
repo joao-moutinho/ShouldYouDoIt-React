@@ -1,13 +1,17 @@
 
-export const loadgif = async ({text}) =>{
+export const loadgif =  ({text}) =>{
     
-    let data =  await fetch(`https://shouldyoudoit.herokuapp.com/?search=${text}`);
+    
+   fetch('https://shouldyoudoit.herokuapp.com/?search=ir%20as%20compras')
+   .then( response => response.json())
+   .then(json =>  receveData(json));
+
+ function receveData(json)  {
      
-    let gif = await data.json();
-    
-    console.log(`dentro do`, gif);
-    
-  return(gif);
+      return(json);
+  } 
+   
+  
 }
 
 // quando der set do state o component dá update

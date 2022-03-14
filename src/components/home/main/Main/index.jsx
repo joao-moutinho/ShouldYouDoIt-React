@@ -42,7 +42,7 @@ const Main = () =>{
             <Title/>
             <Input handleChange={handleValue} />
             {value.length === 0 && <Button check={showModal} disabled={!buttonDisabled}/> }
-            {value.length >= 1 && <Button  check={()=> navigate('/ShowGif')}/>}
+            {value.length >= 1 && <Button  check={()=> navigate(`/ShowGif/${value}`)}/>}
             {buttonState === "showModal" && <Modal check={mainPage}/>}
         </div>
 
