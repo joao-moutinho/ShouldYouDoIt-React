@@ -2,16 +2,11 @@
 export const loadgif =  ({text}) =>{
     
     
-   fetch('https://shouldyoudoit.herokuapp.com/?search=ir%20as%20compras')
+   fetch(`https://shouldyoudoit.herokuapp.com/?search=${text}`)
    .then( response => response.json())
-   .then(json =>  receveData(json));
+   .then(json =>  json);
 
- function receveData(json)  {
-     
-      return(json);
-  } 
    
-  
 }
 
 // quando der set do state o component dá update

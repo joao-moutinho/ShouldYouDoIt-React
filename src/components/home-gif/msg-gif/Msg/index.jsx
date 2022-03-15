@@ -1,11 +1,10 @@
 
-
-const Msg = () =>{
+const Msg = ({text}) =>{
 
   
     
     return(
-       <h2>ola</h2>
+       <h2>{text}</h2>
     );
 }
 

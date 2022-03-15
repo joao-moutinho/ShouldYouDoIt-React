@@ -1,14 +1,13 @@
-import React, { useEffect } from "react";
+import Msg from "../Msg";
 
-
-const Gif = ({text}) => {
-
+const Gif = ({gif}) => {
 
     return(
- 
-      <h1>gif</h1>
-
-    );
+       <> 
+         <Msg text={gif.msg}/>
+         <img src={gif.img} width="400px" />
+       </>  
+   );
 }
 
 export default Gif;

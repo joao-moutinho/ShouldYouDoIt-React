@@ -6,7 +6,6 @@ import BtnDecide from "../buttons/BtnDecide";
 import BtnClean from "../buttons/BtnClean";
 import Modal from "../../home/modal/Modal";
 import Gif from "../msg-gif/Gif";
-import { loadgif } from "../../utils/Load/loadgifs";
 import { useParams } from "react-router";
 
 
@@ -21,7 +20,9 @@ console.log("params ",param);
 const [value, setValue] = useState(param);
 const [showGif, setShowGif] = useState(true);
 const [showModal, setShowModal] = useState(false);
-
+const [gif, setGif] = useState('');
+const [newGif,setNewGif] = useState(true);
+const [prevValue, setPrevValue] = useState(param);
 
 
 
@@ -32,15 +33,29 @@ const handleValue = (text) =>{
 }   
 
 const checkDecide = () =>{
-  value.length >= 1 && setShowGif(true); 
-  value.length === 0 && setShowModal(true);
-  value === param && setShowModal(true);
   
+  value.length >= 1 && setShowGif(true); 
+  value.length >= 1 && setNewGif(!newGif);
+  value.length === 0 && setShowModal(true);
+  value === prevValue && setShowModal(true);
+  setPrevValue(value);
 }
 
 const checkModal = () =>{
   setShowModal(false);
 } 
+
+useEffect(() => {
+
+  fetch(`https://shouldyoudoit.herokuapp.com/?search=${param}`)
+   .then( response => response.json())
+   .then(json => recevedata(json));
+  
+    function recevedata(json){
+        console.log(json);
+        setGif(json);
+    }
+},[newGif])
 
 
 
@@ -52,11 +67,9 @@ const checkModal = () =>{
             <BtnClean/>
             <BtnDecide checkDecide={checkDecide}/>
           </div>
-
-          {showGif===true && <Gif text={value}/>} 
+          {showGif===true && <Gif gif={gif}/>} 
           {showModal === true && <Modal check={checkModal}/>}
-      </div>  
-      
+      </div>   
     );
 }
 
