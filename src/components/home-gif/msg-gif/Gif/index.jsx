@@ -1,9 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 
 const Gif = ({text}) => {
-
- 
 
 
     return(

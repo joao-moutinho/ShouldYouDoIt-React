@@ -34,16 +34,14 @@ const handleValue = (text) =>{
 const checkDecide = () =>{
   value.length >= 1 && setShowGif(true); 
   value.length === 0 && setShowModal(true);
+  value === param && setShowModal(true);
+  
 }
 
 const checkModal = () =>{
   setShowModal(false);
 } 
 
-useEffect(() =>{
-   
-    const gif = loadgif(param);
-});
 
 
     return(
