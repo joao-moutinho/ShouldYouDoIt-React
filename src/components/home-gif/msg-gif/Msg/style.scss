@@ -1,0 +1,14 @@
+$text-section-color: #BB8FB8;
+
+.text-msg{
+    font-family: Lato, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+    color: $text-section-color;
+    width: 500px;
+}

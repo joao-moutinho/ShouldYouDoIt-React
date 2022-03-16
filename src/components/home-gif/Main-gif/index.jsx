@@ -1,3 +1,4 @@
+import React from "react";
 import Title from "../../home/main/Title";
 import Input from "../../home/main/Input"
 import './style.scss';
@@ -55,7 +56,7 @@ useEffect(() => {
         console.log(json);
         setGif(json);
     }
-},[newGif])
+},[newGif]);
 
 
 

@@ -1,10 +1,11 @@
+import './style.scss';
 
 const Msg = ({text}) =>{
 
   
     
     return(
-       <h2>{text}</h2>
+       <h2 className="text-msg">{text}</h2>
     );
 }
 

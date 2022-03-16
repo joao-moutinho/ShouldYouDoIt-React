@@ -1,0 +1,26 @@
+.do-lists{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+
+    .title-do-it{
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        color: #BB8FB8;
+        width: 100%;
+        border-bottom:  2px solid black;
+        padding: 20px;
+    }
+    .gifs-list{
+        list-style-type:none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .li-gif{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
