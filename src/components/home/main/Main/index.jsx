@@ -4,7 +4,7 @@ import Input from "../Input";
 import './main.scss';
 import Button from "../Button";
 import Modal from "../../modal/Modal";
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 
 
@@ -41,8 +41,8 @@ const Main = () =>{
         <div className="main">
             <Title/>
             <Input handleChange={handleValue} />
-            {value.length === 0 && <Button check={showModal} disabled={!buttonDisabled}/> }
-            {value.length >= 1 && <Button  check={()=> navigate(`/ShowGif/${value}`)}/>}
+            {value.length === 0 && <Button check={showModal} disabled={!buttonDisabled}> Decide </Button> }
+            {value.length >= 1 && <Button  check={()=> navigate(`/ShowGif/${value}`)}>Decide </Button>}
             {buttonState === "showModal" && <Modal check={mainPage}/>}
         </div>
 

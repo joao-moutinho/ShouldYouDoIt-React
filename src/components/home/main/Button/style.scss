@@ -1,26 +1,23 @@
-$text-section-color: #BB8FB8;
+$text-section-color: #bb8fb8;
 
-.button{
+.button {
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  background-color: $text-section-color;
+  color: white;
+  font-weight: 200;
+  transition: transform 0.5s;
 
-    
-        border: none;
-        cursor: pointer;
-        height: 35px;
-        width: 500px;
-        border-radius: 8px;
-        background-color: $text-section-color ;
-        color: white;
-        font-weight: 200;
-        transition: transform 0.5s;
+  &:active {
+    transform: scale(0.9);
+  }
 
-        &:active{
-            transform: scale(0.9);
-        }  
-
-       
-}
-.disabled{
+  &:disabled {
     background-color: #888 !important;
     cursor: pointer;
+  }
 }
-
